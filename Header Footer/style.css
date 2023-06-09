@@ -1,0 +1,47 @@
+body{
+    background-color: whitesmoke;
+}
+.layout{
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 
+    "h h h "
+    "sb1 m sb2"
+    "f f f "
+    ;
+
+}
+.header{
+    grid-area: h;
+}
+.footer{
+    grid-area: f;
+}
+.sidebar1{
+    grid-area: sb1;
+}
+.main{
+    grid-area: m;
+}
+
+.sidebar2{
+    grid-area: sb2;
+}
+.layout div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    font: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 50px;
+}
