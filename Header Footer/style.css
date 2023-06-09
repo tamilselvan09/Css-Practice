@@ -3,12 +3,12 @@ body{
 }
 .layout{
     display: grid;
-    grid-template-columns: repeat(3 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 10vh 80vh 10vh;
     grid-template-areas: 
     "h h h "
-    "sb1 m sb2"
-    "f f f "
+    "sb1  m sb2"
+    "f   f f "
     ;
 
 }
